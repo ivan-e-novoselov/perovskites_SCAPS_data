@@ -39,6 +39,9 @@ The dataset includes three main Excel files:
 ### 3. **Material_database_IV_PCE.xlsx**
 - Contains the same parameters as in `Material_database.xlsx`, but only for various ion compositions of perovskites with calculated current-voltage characteristics.
 
+### 4. **etl_htl_layers_description.xlsx**
+- Contains information on the charge transport layer types and their numbering in the dataset.
+
 ## Trained Model
 
 - The repository includes a trained **CatBoost model** (`final_model_catboost.json`) that predicts photovoltaic performance based on the provided dataset.
