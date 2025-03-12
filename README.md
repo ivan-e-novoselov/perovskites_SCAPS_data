@@ -66,23 +66,25 @@ Install the required Python libraries:
 
 ```bash
 pip install catboost pandas numpy shap matplotlib seaborn scikit-learn openpyxl
-
-## Using the Model
+```
+### Using the Model
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/ivan-e-novoselov/perovskites_SCAPS_data.git
-   cd perovskites_SCAPS_data
-
+```bash
+git clone https://github.com/ivan-e-novoselov/perovskites_SCAPS_data.git
+cd perovskites_SCAPS_data
+```
 
 2. Load the model:
+```python
 from catboost import CatBoostRegressor
 
 # Load the trained model
 model = CatBoostRegressor()
 model.load_model('final_model_catboost.json')
-
+```
 3. Prepare your input data:
+```python
 import pandas as pd
 
 # Example input data (replace with your own)
@@ -106,10 +108,11 @@ df = pd.DataFrame(data)
 # Predict PCE
 predictions = model.predict(df)
 print("Predicted PCE:", predictions)
+```
 
 ## Running the Notebook
-Open ml_shap_analysis.ipynb in Jupyter Notebook or JupyterLab.
+Open [ml_shap_analysis.ipynb](https://github.com/ivan-e-novoselov/perovskites_SCAPS_data/blob/main/ml_shap_analysis.ipynb) in Jupyter Notebook or JupyterLab.
 Follow the steps in the notebook to preprocess data, train the model, and analyze results using SHAP.
 
-License
-This project is licensed under the MIT License . See the LICENSE file for more details.
+## License
+This project is licensed under the MIT License . See the [LICENSE](https://github.com/ivan-e-novoselov/perovskites_SCAPS_data/blob/main/LICENSE) file for more details.
