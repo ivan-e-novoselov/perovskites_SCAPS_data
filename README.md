@@ -119,3 +119,6 @@ Follow the steps in the notebook to preprocess data, train the model, and analyz
 
 ## License
 This project is licensed under the MIT License . See the [LICENSE](https://github.com/ivan-e-novoselov/perovskites_SCAPS_data/blob/main/LICENSE) file for more details.
+
+## DOI
+[![DOI](https://zenodo.org/badge/946870429.svg)](https://doi.org/10.5281/zenodo.15211401)
